@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableProcessApplication
-public class PersonRegistryStarter {
+public class TimeRegistryStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(PersonRegistryStarter.class, args);
+        SpringApplication.run(TimeRegistryStarter.class, args);
     }
  
     @Bean

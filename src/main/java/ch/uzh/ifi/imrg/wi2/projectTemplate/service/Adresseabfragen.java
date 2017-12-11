@@ -8,12 +8,11 @@ import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
+@Named("Adresseabfragen")
 public class Adresseabfragen implements JavaDelegate{
 
     @Override
     public void execute(DelegateExecution de) throws Exception {
-
 
     }
 

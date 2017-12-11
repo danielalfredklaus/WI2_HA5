@@ -12,7 +12,7 @@ public class Reparaturofferteerstellen implements JavaDelegate{
 
     @Override
     public void execute(DelegateExecution de) throws Exception {
-
+            //Offertenbetrag entspricht Kosten des kaputten teils plus 100Fr. pauschal
 
     }
 }

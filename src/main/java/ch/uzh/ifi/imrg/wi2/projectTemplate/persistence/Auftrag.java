@@ -12,8 +12,10 @@ public class Auftrag {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String auftragsName;
     private boolean selbstverschuldet;
     private int kaputtesTeil;
+    private String adresse;
 
 
 }

@@ -17,7 +17,7 @@ public class Rechnungerstellen implements JavaDelegate{
 
 
 
-        //Hier sollte Code hinkommen zum erstellen einer rechnung dessen betrag der offerte entnommen wird oder gleicht
+        //Hier sollte Code hinkommen zum erstellen einer rechnung dessen betrag der offerte entnommen wird oder gleicht. Im Moment wird einfach offertenkosten verwendet!
 
     }
 

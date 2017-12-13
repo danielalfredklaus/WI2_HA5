@@ -20,6 +20,7 @@ public class Adresseabfragen implements JavaDelegate{
     @Override
     public void execute(DelegateExecution de) throws Exception {
         Auftrag auftrag = auftragRepository.findByAuftragsName((String) de.getVariable("auftragsName"));
+
         System.out.println("Adresse wird gesetzt für: " + auftrag.getAuftragsName());
 
         auftrag.setAdresse("Muster Mustermann, Musterstrasse 10, 8001 MusterStadt");

@@ -2,13 +2,14 @@
 
 <form class="form-horizontal">
     <div class="control-group">
-        <label class="control-label">Vom Kunden verschuldet? (0 für nein, 1 für Ja)</label>
+        <label class="control-label">Auftragsname</label>
+        <!--Damit es in der repo gefunden werden kann -->
         <div class="controls">
             <input type="text"
-                   cam-variable-name="selbstverschuldet"
-                   cam-variable-type="Integer"
-                   required
-                   class="form-control" />
+                   cam-variable-name="auftragsName"
+                   cam-variable-type="String"
+                   readonly
+                   class="form-control"/>
         </div>
         <div class="control-group">
             <label class="control-label">Welches Teil ist beschädigt?</label>
@@ -17,19 +18,42 @@
                 <input type="text"
                        cam-variable-name="kaputtesTeil"
                        cam-variable-type="Integer"
-                       required
-                       class="form-control" />
+                       readonly
+                       class="form-control"/>
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label">Geben sie dem Auftrag einen Namen.</label>
-            <!--Damit es in der repo gefunden werden kann -->
+            <label class="control-label">Vom Kunden verschuldet? (0 für nein, 1 für Ja)</label>
             <div class="controls">
                 <input type="text"
-                       cam-variable-name="auftragsName"
+                       cam-variable-name="selbstverschuldet"
+                       cam-variable-type="Integer"
+                       readonly
+                       class="form-control"/>
+            </div>
+            <label class="control-label">Adresse des Kunden</label>
+            <div class="controls">
+                <input type="text"
+                       cam-variable-name="adresse"
                        cam-variable-type="String"
                        required
-                       class="form-control" />
+                       class="form-control"/>
+            </div>
+            <label class="control-label">Reparaturkosten (falls Kunde schuld)</label>
+            <div class="controls">
+                <input type="text"
+                       cam-variable-name="offertenkosten"
+                       cam-variable-type="Integer"
+                       readonly
+                       class="form-control"/>
+            </div>
+            <label class="control-label">Will Kunde Reparatur? (0 für Nein, 1 für Ja)</label>
+            <div class="controls">
+                <input type="text"
+                       cam-variable-name="offerteangenommen"
+                       cam-variable-type="Integer"
+                       readonly
+                       class="form-control"/>
             </div>
         </div>
     </div>
